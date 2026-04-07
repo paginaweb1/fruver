@@ -12,14 +12,19 @@
 
 <style>
 
+/* GENERAL */
+body{
+margin:0;
+font-family: Arial, sans-serif;
+}
+
 /* NAVBAR */
 .navbar a {
-  float: left;
+  display:block;
   padding: 12px;
   color: white;
   text-decoration: none;
   font-size: 17px;
-  width: 100%;
   text-align: center;
   background: black;
 }
@@ -54,12 +59,24 @@ color:#000;
 transform: translateY(-50%) scale(1.1);
 }
 
-/* RESPONSIVE */
-@media screen and (max-width: 500px) {
-  .navbar a {
-    width: 100%;
-    text-align: center;
-  }
+/* TITULO SECCION */
+.titulo-seccion{
+text-align:center;
+background:#ff9800;
+color:#fff;
+padding:15px;
+margin-top:30px;
+font-weight:bold;
+}
+
+/* CARDS */
+.w3-card img{
+border-radius:10px 10px 0 0;
+}
+
+/* RESPONSIVE EXTRA */
+@media (max-width:768px){
+h1{font-size:22px;}
 }
 
 </style>
@@ -103,28 +120,29 @@ style="position:absolute;top:-28px;right:24px">
   <h1 class="w3-center w3-animate-left">NOSOTROS</h1>
 </div>
 
-<!-- FRUTAS -->
-<div class="w3-container w3-orange">
-  <h1>QUE VAS A PEDIR HOY?</h1>
+<!-- TITULO ÚNICO -->
+<div class="titulo-seccion">
+  <h2>¿QUÉ VAS A PEDIR HOY?</h2>
 </div>
 
+<!-- PRODUCTOS -->
 <div class="w3-row-padding w3-margin-top">
 
-<div class="w3-third">
+<div class="w3-col l4 m6 s12">
 <div class="w3-card">
 <img src="naranjas.png" style="width:100%">
 <div class="w3-container"><h5>Naranja x Lb $1.600</h5></div>
 </div>
 </div>
 
-<div class="w3-third">
+<div class="w3-col l4 m6 s12">
 <div class="w3-card">
 <img src="bananos.png" style="width:100%">
 <div class="w3-container"><h5>Bananos x Lb $1.400</h5></div>
 </div>
 </div>
 
-<div class="w3-third">
+<div class="w3-col l4 m6 s12">
 <div class="w3-card">
 <img src="manzanas.png" style="width:100%">
 <div class="w3-container"><h5>Manzana x Lb $5.400</h5></div>
@@ -133,24 +151,23 @@ style="position:absolute;top:-28px;right:24px">
 
 </div>
 
-<!-- MÁS PRODUCTOS -->
 <div class="w3-row-padding w3-margin-top">
 
-<div class="w3-third">
+<div class="w3-col l4 m6 s12">
 <div class="w3-card">
 <img src="papaya.png" style="width:100%">
 <div class="w3-container"><h5>Papaya x Lb $1.400</h5></div>
 </div>
 </div>
 
-<div class="w3-third">
+<div class="w3-col l4 m6 s12">
 <div class="w3-card">
 <img src="sandia.png" style="width:100%">
 <div class="w3-container"><h5>Sandía x Lb $1.500</h5></div>
 </div>
 </div>
 
-<div class="w3-third">
+<div class="w3-col l4 m6 s12">
 <div class="w3-card">
 <img src="manzana-verde.png" style="width:100%">
 <div class="w3-container"><h5>Manzana verde x Lb $5.600</h5></div>
@@ -159,28 +176,23 @@ style="position:absolute;top:-28px;right:24px">
 
 </div>
 
-<!-- SEGUNDA SECCIÓN -->
-<div class="w3-container w3-orange">
-  <h1>QUE VAS A PEDIR HOY?</h1>
-</div>
-
 <div class="w3-row-padding w3-margin-top">
 
-<div class="w3-third">
+<div class="w3-col l4 m6 s12">
 <div class="w3-card">
 <img src="pescado.png" style="width:100%">
 <div class="w3-container"><h5>Mojarra Roja x Lb $8.500</h5></div>
 </div>
 </div>
 
-<div class="w3-third">
+<div class="w3-col l4 m6 s12">
 <div class="w3-card">
 <img src="cuajada.png" style="width:100%">
 <div class="w3-container"><h5>Cuajada x Lb $11.000</h5></div>
 </div>
 </div>
 
-<div class="w3-third">
+<div class="w3-col l4 m6 s12">
 <div class="w3-card">
 <img src="frutos-secos.png" style="width:100%">
 <div class="w3-container"><h5>Frutos secos x Lb $20.000</h5></div>
