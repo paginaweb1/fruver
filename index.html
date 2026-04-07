@@ -1,238 +1,212 @@
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<title>fruver</title>
-<meta charset="UTF-8">
+<!doctype html>
+<html lang="en">
+<head>
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="estyle.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
+<title>Belleza!</title>
 
 <style>
-* {box-sizing: border-box}
-body {font-family: Arial, Helvetica, sans-serif;}
-
-.navbar {
-  width: 100%;
-  background-color: #000;
-  overflow: auto;
+/* BOTÓN VOLVER */
+.btn-volver{
+position: fixed;
+top: 50%;
+left: 15px;
+transform: translateY(-50%);
+background: #000;
+color: #fff;
+width:45px;
+height:45px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:18px;
+z-index:1001;
+text-decoration:none;
+box-shadow:0 0 10px rgba(0,0,0,0.5);
+transition:0.3s;
+}
+.btn-volver:hover{
+background:#00ff9d;
+color:#000;
+transform: translateY(-50%) scale(1.1);
 }
 
-.navbar a {
-  float: left;
-  padding: 12px;
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
-  width: 25%; /* Four links of equal widths */
-  text-align: center;
+/* GALERÍA */
+div.gallery { border:1px solid #ccc; }
+div.gallery:hover { border:1px solid #777; }
+div.gallery img { width:100%; height:auto; }
+div.desc { padding:15px; text-align:center; }
+
+* { box-sizing:border-box; }
+
+.responsive{
+padding:0 6px;
+float:left;
+width:24.99999%;
 }
 
-.navbar a:hover {
-  background-color: #555;
+@media only screen and (max-width:700px){
+.responsive{width:49.99999%; margin:6px 0;}
+}
+@media only screen and (max-width:500px){
+.responsive{width:100%;}
 }
 
-.navbar a.active {
-  background-color: #04AA6D;
-}
-
-@media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
+.clearfix:after{
+content:"";
+display:table;
+clear:both;
 }
 </style>
-<body>
 
+</head>
 
-<div class="navbar">
-  <a href="#">BIENVENIDOS</a> 
- 
+<body background="fondo3.png" id="myPage">
+
+<!-- BOTÓN VOLVER -->
+<a href="https://paginaweb1.github.io/dise-os_web.com/" class="btn-volver">
+  <i class="fa fa-arrow-left"></i>
+</a>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<div class="container-fluid">
+<img src="logo.png" style="width:150px;">
+<a class="navbar-brand">Agenda tu cita aqui</a>
+</div>
+</nav>
+
+<!-- WHATSAPP -->
+<div class="w3-container" style="position:relative">
+<a href="https://wa.me/573167017590" target="_blank"
+class="w3-button w3-xlarge w3-circle w3-teal"
+style="position:absolute;top:-28px;right:24px">
+<i class="fa fa-whatsapp"></i>
+</a>
 </div>
 
-<div class="w3-container w3-center w3-animate-top">
-  <h1>A MERCAR FRESCO!!!</h1>
-  <h1>Y A BUEN PRECIO</h1>
-  
-</div>
-<div class="w3-container w3-center" >
-<video src="mov_bbb.mp4" autoplay muted loop width="100%" ></video>
+<h1>Hola!!</h1>
+<h1>Bienvenidos a Siempre Bellas</h1>
 
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+
+<div class="w3-container w3-center">
+<video src="mov_bbb.mp4" autoplay muted loop width="100%"></video>
+</div>
+
+<div class="text-center pt-5">
+<div class="container">
+
+<h2>Manicura</h2>
+<h2>Excelentes diseños para manos y pies</h2>
+
+<!-- GALERÍA UÑAS -->
+<div class="w3-row-padding w3-margin-top">
+<div class="w3-third"><div class="w3-card"><img src="uñas1.png"></div></div>
+<div class="w3-third"><div class="w3-card"><img src="uñas2.png"></div></div>
+<div class="w3-third"><div class="w3-card"><img src="uñas3.png"></div></div>
+</div>
+
+<div class="w3-row-padding w3-margin-top">
+<div class="w3-third"><div class="w3-card"><img src="uñas4.png"></div></div>
+<div class="w3-third"><div class="w3-card"><img src="uñas5.png"></div></div>
+<div class="w3-third"><div class="w3-card"><img src="uñas6.png"></div></div>
+</div>
+
+<div class="w3-row-padding w3-margin-top">
+<div class="w3-third"><div class="w3-card"><img src="uñas7.png"></div></div>
+<div class="w3-third"><div class="w3-card"><img src="uñas8.png"></div></div>
+<div class="w3-third"><div class="w3-card"><img src="uñas9.png"></div></div>
+</div>
+
+<h2 class="pt-5">Expertos en belleza</h2>
+
+<!-- GALERÍA PELO -->
+<div class="w3-row-padding w3-margin-top">
+<div class="w3-third"><div class="w3-card"><img src="pelo1.png"></div></div>
+<div class="w3-third"><div class="w3-card"><img src="pelo2.png"></div></div>
+<div class="w3-third"><div class="w3-card"><img src="pelo3.png"></div></div>
+</div>
+
+<div class="w3-row-padding w3-margin-top">
+<div class="w3-third"><div class="w3-card"><img src="pelo4.png"></div></div>
+<div class="w3-third"><div class="w3-card"><img src="pelo5.png"></div></div>
+<div class="w3-third"><div class="w3-card"><img src="pelo6.png"></div></div>
+</div>
+
+<div class="w3-row-padding w3-margin-top">
+<div class="w3-third"><div class="w3-card"><img src="pelo7.png"></div></div>
+<div class="w3-third"><div class="w3-card"><img src="pelo8.png"></div></div>
+<div class="w3-third"><div class="w3-card"><img src="pelo9.png"></div></div>
+</div>
+
+<!-- SERVICIOS -->
+<h1 class="pt-5">NUESTROS SERVICIOS</h1>
+
+<div class="w3-row-padding w3-padding-64 w3-theme-l1">
+
+<div class="w3-quarter">
+<h2>Nosotros</h2>
+<p>Servicios de belleza con calidad y experiencia única.</p>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+<img src="servicios.png">
 <div class="w3-container">
-  <h1 class="w3-center w3-animate-left">NOSOTROS</h1>
+<h3>SERVICIOS</h3>
+<p>Cortes, maquillaje, manicure, tinturas.</p>
 </div>
- <div class="w3-container" style="position:relative">
-    <a href="https://wa.me/573209304898/?text=tu%20texto%20personalizado" target="_blank"onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
-    style="position:absolute;top:-28px;right:24px"><i class="fa fa-whatsapp"></i></a>
-  </div>
-
-<div class="w3-container w3-orange">
-  <h1>QUE VAS A PEDIR HOY?</h1>
-
+</div>
 </div>
 
-<div class="w3-row-padding w3-margin-top">
-  <div class="w3-third">
-    <div class="w3-card">
-      <img src="naranjas.png" style="width:100%">
-      <div class="w3-container">
-        <h5>Naranja x Lb $1.600=</h5>
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-third">
-    <div class="w3-card">
-      <img src="bananos.png" style="width:100%">
-      <div class="w3-container">
-        <h5>Bananos x Lb $1.400=</h5>
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-third">
-    <div class="w3-card">
-      <img src="manzanas.png" style="width:100%">
-      <div class="w3-container">
-        <h5>Manzana x Lb $5.400=</h5>
-      </div>
-    </div>
-  </div>
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+<img src="Ubicacion.png">
+<div class="w3-container">
+<h3>UBICACIÓN</h3>
+<p>Santander, Colombia</p>
+</div>
+</div>
 </div>
 
-<div class="w3-row-padding w3-margin-top">
-  <div class="w3-third">
-    <div class="w3-card">
-      <img src="papaya.png" style="width:100%">
-      <div class="w3-container">
-        <h5>Papaya x Lb $1.400=</h5>
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-third">
-    <div class="w3-card">
-      <img src="sandia.png" style="width:100%">
-      <div class="w3-container">
-        <h5>Sandia x Lb $1.500=</h5>
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-third">
-    <div class="w3-card">
-      <img src="manzana-verde.png" style="width:100%">
-      <div class="w3-container">
-        <h5>Manzana verde x Lb $5.600=</h5>
-      </div>
-    </div>
-  </div>
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+<img src="horario.png">
+<div class="w3-container">
+<h3>HORARIO</h3>
+<p>Lunes a sábado 8am - 7pm</p>
+</div>
+</div>
 </div>
 
-<div class="w3-row-padding w3-margin-top">
-  <div class="w3-third">
-    <div class="w3-card">
-      <img src="uvas.png" style="width:100%">
-      <div class="w3-container">
-        <h5>Bandeja uva negra $2.500=</h5>
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-third">
-    <div class="w3-card">
-      <img src="peras.png" style="width:100%">
-      <div class="w3-container">
-        <h5>Pera x Lb $5.400=</h5>
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-third">
-    <div class="w3-card">
-      <img src="limones.png" style="width:100%">
-      <div class="w3-container">
-        <h5>Limon x Lb $2.500=</h5>
-      </div>
-    </div>
-  </div>
 </div>
 
-<div class="w3-row-padding w3-margin-top">
-  <div class="w3-third">
-    <div class="w3-card">
-      <img src="aguacate.png" style="width:100%">
-      <div class="w3-container">
-        <h5>Aguacate x Lb $3.500=</h5>
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-third">
-    <div class="w3-card">
-      <img src="fresa.png" style="width:100%">
-      <div class="w3-container">
-        <h5>Bandeja Fresa $3.500</h5>
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-third">
-    <div class="w3-card">
-      <img src="piña.png" style="width:100%">
-      <div class="w3-container">
-        <h5>Piña x Lb $2.000=</h5>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="w3-container w3-orange">
-  <h1>QUE VAS A PEDIR HOY?</h1>
-</div>
-
-<div class="w3-row-padding w3-margin-top">
-  <div class="w3-third">
-    <div class="w3-card">
-      <img src="pescado.png" style="width:100%">
-      <div class="w3-container">
-        <h5>Mojarra Roja x Lb $8.500=</h5>
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-third">
-    <div class="w3-card">
-      <img src="cuajada.png" style="width:100%">
-      <div class="w3-container">
-        <h5>Cuajada x Lb $11.000=</h5>
-      </div>
-    </div>
-  </div>
-
- <div class="w3-third">
-    <div class="w3-card">
-      <img src="frutos-secos.png" style="width:100%">
-      <div class="w3-container">
-        <h5>Frutos secos x Lb $20.000=</h5>
-      </div>
-    </div>
-  </div>
-</div>
-
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-   </div>
-  <p> <a href="" title="W3.CSS" target="_blank" class="w3-hover-text-green">UN DIA A LA VEZ  !!!</a></p>
+<!-- FOOTER -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+<h4>Nuestras redes sociales</h4>
+<i class="fa fa-facebook"></i>
+<i class="fa fa-instagram"></i>
+<p>© 2022</p>
 </footer>
- 
 
 </body>
-</html> 
+</html>
+
+
+
+
+
+
+
